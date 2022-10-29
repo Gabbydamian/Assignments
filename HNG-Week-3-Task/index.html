@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Registration Page</title>
+</head>
+
+<body>
+  <h1>Registration Page</h1>
+  <div class="container">
+    <form action="./login.html">
+      <input type="text" id="fname" name="fname" placeholder="First Name" required />
+      <input type="text" id="lname" name="lname" placeholder="Last Name" required />
+      <input pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" type="tel" id="telnum" name="telnum"
+        placeholder="Phone Number" required />
+      <input type="email" id="email" name="email" placeholder="Email Address" required />
+      <input type="password" name="password" id="password" placeholder="Password"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+      <div class="requirements">At least one uppercase, lowercase and 6 characters</div>
+      <select required name="gender" id="gender">
+        <option value="male" selected>Male</option>
+        <option value="female">Female</option>
+      </select>
+      <input required type="date" id="dob" name="dob" placeholder="Date of Birth" />
+      <input required type="color" id="color" name="color" placeholder="Favourite Color" />
+      <input required type="submit" id="btn" value="Sign Up" />
+    </form>
+  </div>
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
